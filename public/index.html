@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IG Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>IG Tracker</h1>
+        <p>Check public Instagram activity without logging in.</p>
+      </header>
+
+      <section class="search">
+        <label for="username">Instagram username</label>
+        <div class="search-row">
+          <input
+            id="username"
+            type="text"
+            placeholder="e.g. natgeo"
+            autocomplete="off"
+          />
+          <button id="searchButton">Search</button>
+        </div>
+        <p id="status" class="status"></p>
+      </section>
+
+      <section id="results" class="results hidden">
+        <div class="profile-card">
+          <img id="avatar" alt="Profile avatar" />
+          <div>
+            <h2 id="profileName"></h2>
+            <p id="privacyStatus"></p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="panel">
+            <h3>Recent Followers</h3>
+            <ul id="followersList" class="list"></ul>
+          </div>
+          <div class="panel">
+            <h3>Recent Following</h3>
+            <ul id="followingList" class="list"></ul>
+          </div>
+          <div class="panel">
+            <h3>Recent Likes</h3>
+            <ul id="likesList" class="list"></ul>
+          </div>
+          <div class="panel">
+            <h3>Recent Comments</h3>
+            <ul id="commentsList" class="list"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

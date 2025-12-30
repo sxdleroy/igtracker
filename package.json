@@ -1,0 +1,14 @@
+{
+  "name": "igtracker",
+  "version": "0.1.0",
+  "description": "Simple Instagram public activity checker",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
